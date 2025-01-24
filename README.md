@@ -1,1 +1,3 @@
-# Tetris
+# PyTris
+
+An tetris game made in python
