@@ -1,3 +1,5 @@
 # PyTris
 
-An tetris game made in python
+An tetris game made in python.
+
+In developpement.
