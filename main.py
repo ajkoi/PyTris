@@ -27,4 +27,3 @@ class Piece:
         self.forme = forme_possibles[forme]
         self.x = x
         self.y = y
-a = Piece(1)
