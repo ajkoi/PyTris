@@ -1,4 +1,12 @@
 from random import randint
+print("""    ____       ______     _     
+   / __ \__  _/_  __/____(_)____
+  / /_/ / / / // / / ___/ / ___/
+ / ____/ /_/ // / / /  / (__  ) 
+/_/    \__, //_/ /_/  /_/____/  
+      /____/                    
+
+""")
 grille = [[0 for i in range(10)] for j in range(20)]
 def afficher_grille(grille):
     """pour afficher la grille dans l'invite de commande"""
@@ -19,4 +27,4 @@ class Piece:
         self.forme = forme_possibles[forme]
         self.x = x
         self.y = y
-a = piece(1)
+a = Piece(1)
