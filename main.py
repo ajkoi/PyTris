@@ -1,18 +1,16 @@
-from random import randint
-print("""    ____       ______     _     
-   / __ \__  _/_  __/____(_)____
-  / /_/ / / / // / / ___/ / ___/
- / ____/ /_/ // / / /  / (__  ) 
-/_/    \__, //_/ /_/  /_/____/  
-      /____/                    
+#      ____         ______       _      
+#     / __ \ __  __/_  __/_____ (_)_____
+#    / /_/ // / / / / /  / ___// // ___/
+#   / ____// /_/ / / /  / /   / /(__  ) 
+#  /_/     \__, / /_/  /_/   /_//____/  
+#         /____/                   
 
-""")
+from random import randint
 grille = [[0 for i in range(10)] for j in range(20)]
 def afficher_grille(grille):
     """pour afficher la grille dans l'invite de commande"""
     for ligne in grille:
         print(ligne)
-
 
 afficher_grille(grille)
 forme_possibles = [[[1, 1, 1, 1]],
@@ -22,8 +20,14 @@ forme_possibles = [[[1, 1, 1, 1]],
                     [[5, 0], [5, 5], [0, 5]]
                    ]
 class Piece:
-    """la classe correspondant à une pièce"""
+    """Une pièce, avec sa position en fonction de x et de y et de sa forme (différentes formes possibles)"""
     def __init__(self,x, y, forme:int):
         self.forme = forme_possibles[forme]
         self.x = x
         self.y = y
+        def rotation(self):
+        """Faire une rotation à la pièce"""
+def main():
+      """La boucle principale du jeu"""
+      afficher_grille(grille):
+
