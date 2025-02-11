@@ -29,10 +29,12 @@ class Piece:
         self.y = y
     def rotation(self):
     """Faire une rotation à la pièce"""
+
 def main():
       """La boucle principale du jeu"""
       afficher_grille(grille)
 # pour inserer une pièce en haut
-for lignes in range(len(piece)):
-    for char in range(len(piece[lignes])):
-        grille[lignes][char+5] = piece[lignes][char]
+def inserer_piece():
+    for lignes in range(len(piece)):
+        for char in range(len(piece[lignes])):
+            grille[lignes][char+5] = piece[lignes][char]
