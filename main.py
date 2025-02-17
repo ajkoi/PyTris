@@ -37,4 +37,5 @@ def main():
 def inserer_piece():
     for lignes in range(len(piece)):
         for char in range(len(piece[lignes])):
-            grille[lignes][char+5] = piece[lignes][char]
+           grille[lignes][char+5] = piece[lignes][char]
+           
